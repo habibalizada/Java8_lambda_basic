@@ -5,6 +5,7 @@ import com.company.Unit1.Person;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.function.Consumer;
 import java.util.function.Predicate;
 
 public class Unit1ExerciseSolutionJava8 {
@@ -22,27 +23,22 @@ public class Unit1ExerciseSolutionJava8 {
 
         // Step 2: Create a method that prints all element in the list
         System.out.println("Printing all persons");
-        printConditionally(people, p -> true);
+        PerformConditionally(people, p -> true, p -> System.out.println(p));
 
         // Step 3: Create a method tha prints all people that have last name beginning with C
         System.out.println("\nPrinting all person with last name beginning with C");
-        printConditionally(people, p -> p.getLastName().startsWith("C"));
+        PerformConditionally(people, p -> p.getLastName().startsWith("C"), p -> System.out.println(p));
 
         System.out.println("\nPrinting all person with first name beginning with C");
-        printConditionally(people, p -> p.getFirsName().startsWith("C"));
+        PerformConditionally(people, p -> p.getFirsName().startsWith("C"), p -> System.out.println(p.getFirsName()));
 
     }
 
-    private static void printConditionally(List<Person> people, Predicate<Person> predicate) {
+    private static void PerformConditionally(List<Person> people, Predicate<Person> predicate, Consumer<Person> consumer) { // for more info checkout: https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html
         for (Person p : people) {
             if (predicate.test(p)){
-                System.out.println(p);
+                consumer.accept(p);
             }
         }
     }
-
-//
-//    interface Condition{
-//        boolean test(Person p);
-//    }
 }
