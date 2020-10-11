@@ -24,7 +24,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6c328104-45f5-47c7-b740-c594b498601d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Unit1/Unit1ExerciseSolutionJava8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Unit1/Unit1ExerciseSolutionJava8.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +54,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Markdown" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/company" />
     <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RecentsManager">
@@ -63,7 +62,11 @@
       <recent name="com.company.Unit1" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.company.Unit2" />
       <recent name="com.company.Unit1" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/company" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Unit1ExerciseSolutionJava8">
